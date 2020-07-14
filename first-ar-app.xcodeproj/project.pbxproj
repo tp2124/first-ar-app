@@ -13,8 +13,8 @@
 		ED0A29DE233C545B005AC4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0A29DD233C545B005AC4B1 /* Assets.xcassets */; };
 		ED0A29E1233C545B005AC4B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0A29E0233C545B005AC4B1 /* Preview Assets.xcassets */; };
 		ED0A29E4233C545B005AC4B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0A29E2233C545B005AC4B1 /* LaunchScreen.storyboard */; };
-		ED0A29EF233C545B005AC4B1 /* first_ar_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A29EE233C545B005AC4B1 /* first_ar_appTests.swift */; };
-		ED0A29FA233C545B005AC4B1 /* first_ar_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A29F9233C545B005AC4B1 /* first_ar_appUITests.swift */; };
+		ED4E6BB224BD6BEA007BD1A8 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = ED4E6BB024BD6BE9007BD1A8 /* gramophone.usdz */; };
+		ED4E6BB324BD6BEA007BD1A8 /* wateringcan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = ED4E6BB124BD6BEA007BD1A8 /* wateringcan.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +44,9 @@
 		ED0A29E3233C545B005AC4B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED0A29E5233C545B005AC4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED0A29EA233C545B005AC4B1 /* first-ar-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "first-ar-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED0A29EE233C545B005AC4B1 /* first_ar_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = first_ar_appTests.swift; sourceTree = "<group>"; };
-		ED0A29F0233C545B005AC4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED0A29F5233C545B005AC4B1 /* first-ar-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "first-ar-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED0A29F9233C545B005AC4B1 /* first_ar_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = first_ar_appUITests.swift; sourceTree = "<group>"; };
-		ED0A29FB233C545B005AC4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED4E6BB024BD6BE9007BD1A8 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		ED4E6BB124BD6BEA007BD1A8 /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wateringcan.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				ED0A29D6233C5458005AC4B1 /* first-ar-app */,
-				ED0A29ED233C545B005AC4B1 /* first-ar-appTests */,
-				ED0A29F8233C545B005AC4B1 /* first-ar-appUITests */,
 				ED0A29D5233C5458005AC4B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +95,7 @@
 		ED0A29D6233C5458005AC4B1 /* first-ar-app */ = {
 			isa = PBXGroup;
 			children = (
+				ED4E6BAF24BD6BC6007BD1A8 /* Models */,
 				ED0A29D7233C5458005AC4B1 /* AppDelegate.swift */,
 				ED0A29D9233C5458005AC4B1 /* ContentView.swift */,
 				ED0A29DB233C5458005AC4B1 /* Experience.rcproject */,
@@ -118,22 +115,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		ED0A29ED233C545B005AC4B1 /* first-ar-appTests */ = {
+		ED4E6BAF24BD6BC6007BD1A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ED0A29EE233C545B005AC4B1 /* first_ar_appTests.swift */,
-				ED0A29F0233C545B005AC4B1 /* Info.plist */,
+				ED4E6BB024BD6BE9007BD1A8 /* gramophone.usdz */,
+				ED4E6BB124BD6BEA007BD1A8 /* wateringcan.usdz */,
 			);
-			path = "first-ar-appTests";
-			sourceTree = "<group>";
-		};
-		ED0A29F8233C545B005AC4B1 /* first-ar-appUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ED0A29F9233C545B005AC4B1 /* first_ar_appUITests.swift */,
-				ED0A29FB233C545B005AC4B1 /* Info.plist */,
-			);
-			path = "first-ar-appUITests";
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +231,8 @@
 				ED0A29E4233C545B005AC4B1 /* LaunchScreen.storyboard in Resources */,
 				ED0A29E1233C545B005AC4B1 /* Preview Assets.xcassets in Resources */,
 				ED0A29DE233C545B005AC4B1 /* Assets.xcassets in Resources */,
+				ED4E6BB224BD6BEA007BD1A8 /* gramophone.usdz in Resources */,
+				ED4E6BB324BD6BEA007BD1A8 /* wateringcan.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED0A29EF233C545B005AC4B1 /* first_ar_appTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED0A29FA233C545B005AC4B1 /* first_ar_appUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
